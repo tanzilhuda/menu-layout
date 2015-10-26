@@ -1,0 +1,192 @@
+*{margin: 0;
+    padding: 0;
+}
+
+}.head{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    margin-top:0;
+    padding-top: 0;
+}
+@keyframes animation{
+    from{transform: scale(1);}
+    to{transform: scale(1.6);} 
+}
+.img{
+    width: 10%;
+    height: 100px;
+    float: left;
+    margin-left: 55px;
+    margin-top: 5px;
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+/*.......menubar start.....*/
+.nav{
+    
+    border: hide;
+    width: 85%;
+    height: 100px;
+    float: left;
+    margin-left: 5px;
+    background-color: green;        
+}
+.nav ul{
+    list-style-type: none;    
+}
+.nav ul li{
+    float: left;
+    display: block;
+    margin-left: 58px;
+    margin-top: 40px;
+    font-family: cursive;
+    font-size: 25px;
+    background-color: green;
+    position: relative;
+    
+}
+.nav ul a{
+    display: block;
+    margin-left: 60px;
+    transition: all 2s ease;
+    color: aqua;
+    padding: 0px
+}
+.nav ul li a:hover{
+    background-color: darkgreen;
+}
+/* dropdown css*/
+.nav ul li ul{
+    position: absolute;
+    left: -9999px;
+    background-color: green;
+}
+.nav ul li ul li{
+    text-align: center;
+    float: none;
+    width: 210px;
+    
+    }
+.nav ul li ul li a{
+    text-align: center;
+    margin-right: 15px;
+    padding: 1px;
+    margin: 30px;
+}
+.nav ul li:hover ul{left: 0px;}
+.nav ul li ul li a:hover{color: lightcoral}
+
+.nav ul a:hover{
+    color: white;
+    font-size: 150%;
+    text-decoration: overline;
+}
+/*.......end of menubar......*/
+.scroolbar{
+    border: 1px solid black;
+    width: 100%;
+    height: 40px;
+    text-align:center;
+    background-color: bisque;
+    font-family:monospace;
+    padding-top: 10px;
+    font-size: 25px;
+    color: indianred;
+    
+}
+/*start content*/
+.content{
+    width: 100%;
+    height: 400px;
+    background-color: bisque;
+}
+.box1{
+    width: 30%;
+    height: 400px;
+    background-color:antiquewhite;
+    float: left;
+    margin-left: 20px;
+    overflow: scroll;
+    }
+.box1 >  img{
+    float: left;
+    height: 250px;
+    width: 200px;
+}
+/*end content*/
+.btn {
+    width: 20%;
+    height: 60px;
+    padding-left: 100px;
+    text-align: center;
+    margin-left: 550px;
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 32;
+  -moz-border-radius: 32;
+  border-radius: 32px;
+  font-family: Georgia;
+  color: #d99db5;
+  font-size: 50px;
+  padding: 7px 17px 11px 13px;
+  text-decoration: none;
+    transition: 1s;
+}
+
+.btn:hover {
+  background: darkgreen;
+    
+/*
+  background-image: -webkit-linear-gradient(top, #3cfa42, #7ac291);
+  background-image: -moz-linear-gradient(top, #3cfa42, blue);
+  background-image: -ms-linear-gradient(top, #3cfa42, #7ac291);
+  background-image: -o-linear-gradient(top, #3cfa42, #7ac291);
+  background-image: linear-gradient(to bottom, #3cfa42, #7ac291);
+*/
+  text-decoration: none;
+    font-size: 55px;
+}
+/*----------------------*/
+.contact-form{
+    width: 100%;
+    height: 200px;
+   }
+.form{
+    width: 58%;
+    height: 190px;
+    float: left;
+    margin: 5px auto;
+    border: 1px solid while;
+    background-color: #EDC951
+}
+.submit{
+    width: 10px;
+    height: 30px;
+    
+}
+.map{
+    width: 38%;
+    height: 190px;
+    float: left;
+    margin: 5px auto;
+    margin-left: 20px;
+}
+.footer{
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+}
+.footer a:hover{
+    color: green;
+    font-size: 150%;
+    text-decoration: none;
+}
